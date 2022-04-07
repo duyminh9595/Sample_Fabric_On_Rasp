@@ -72,3 +72,11 @@ export PACKAGE_ID=basic_1:9820659c595e662a849033ca23b4424e87a126e8f40b5f81ace598
 
 ./scripts/invoke_cc.sh 
 
+<!-- rerun peer and orderer -->
+cd /home/pi/Sample_Fabric_On_Rasp/test-network/docker
+docker-compose -f docker-compose-test-net.yaml up -d
+docker-compose -f docker-compose-cli.yaml up -d
+
+
+
+
